@@ -3,7 +3,6 @@ package banditpoc;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * This class is used as a replacement for the main as two proof of concept programs need to be run
  * at the same time. This class initiates the Bandit Problem classes and runs the program.
