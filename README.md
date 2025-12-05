@@ -1,18 +1,47 @@
-# Final Year Project
 
-## The primary aim of this project is 
- to design and implement a game-playing program using Monte-Carlo Tree Search (MCTS). The game I have decided to implement using the MCTS is Connect4; Connect4 is a two-player strategy board game where players take turns dropping coloured discs into a grid to be the first to get four in a row. 
+# Game Playing with Monte-Carlo Tree Search
 
-## Directory Stucture:
+The primary aim of this project is to design and implement a game-playing program using the Monte-Carlo Tree Search (MCTS) algorithm.  
+The AI opponent will play Connect4 against real players, it will showcase the decision-making capabilities of the algorithm well and be a good opponent, demonstrating the algorithms effective use in AI gaming.
 
-#### documents - 
-containing all of my documentation for this project
 
-#### product - 
-containing the code for my project
+## Proof of Concepts
 
-#### diary.md - 
-my diary documenting my work
+Early objectives include creating proof-of-concept programs. 
+One of these will be the bandit proof of concept where I will create a bandit problem and then code four different ways of solving the bandit problem using four different algorithms. I will then run a series of tests and compare the results of the different algorithms to see which one is best, the best one being used in my implementation of MCTS.  
+Another proof of concept is a basic Connect4 game that allows two human players to play the game. This will later be implemented into the final program, adding GUI and a player vs AI mode. 
+## Main Features
 
-#### README.md - 
-this document
+- Proof of Concept: Implementation of Bandit Problem Solver:
+The project will commence with the development of a proof-of-concept program to tackle bandit problems, assessing the effectiveness of Upper Confidence Bound (UCB) methods against naive strategies. This will later be implemented into the Monte-Carlo Tree Search algorithm.  
+-  Proof of Concept: Implementation of PvP Connect4:
+Create a functional program allowing two players to play Connect4 without AI involvement. This will lay out the foundations for understanding game mechanics and state transitions.  
+-  Game Rules Documentation:  
+Formulate semi-formal documentation detailing the rules of Connect4, including state representations and allowable transitions. This ensures clarity in the game design.  
+- 	GUI for Connect4:  
+Designing and implementing GUI using JavaFX and SceneBuilder for Connect4. Creating a menu allowing users to pick between player vs player or to play vs AI. Provide documentation and justification for design choices.  
+- 	Development of MCTS Algorithm:  
+Implement the MCTS algorithm, encapsulating its core components, selection, expansion, simulation, and backpropagation, within a well-structured, object-oriented design.  
+- 	Software Engineering Documentation:  
+Compile a comprehensive report detailing the software engineering process, design decisions, and challenges faced during development. This will include discussions on the theoretical foundations of bandit processes and MCTS, as well as justifications for the GUI design.
+
+
+## Documentation
+
+[Documentation](https://linktodocumentation)
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Demo
+
+Insert gif or link to demo
+
+
+## Lessons Learned
+
+What did you learn while building this project? What challenges did you face and how did you overcome them?
+
