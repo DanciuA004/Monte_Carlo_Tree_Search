@@ -10,11 +10,13 @@ The AI opponent will play Connect4 against real players, it will showcase the de
 Early objectives include creating proof-of-concept programs. 
 One of these will be the bandit proof of concept where I will create a bandit problem and then code four different ways of solving the bandit problem using four different algorithms. I will then run a series of tests and compare the results of the different algorithms to see which one is best, the best one being used in my implementation of MCTS.  
 Another proof of concept is a basic Connect4 game that allows two human players to play the game. This will later be implemented into the final program, adding GUI and a player vs AI mode. 
+
+
 ## Main Features
 
-- Proof of Concept: Implementation of Bandit Problem Solver:
+- Proof of Concept: Implementation of Bandit Problem Solver:  
 The project will commence with the development of a proof-of-concept program to tackle bandit problems, assessing the effectiveness of Upper Confidence Bound (UCB) methods against naive strategies. This will later be implemented into the Monte-Carlo Tree Search algorithm.  
--  Proof of Concept: Implementation of PvP Connect4:
+-  Proof of Concept: Implementation of PvP Connect4:  
 Create a functional program allowing two players to play Connect4 without AI involvement. This will lay out the foundations for understanding game mechanics and state transitions.  
 -  Game Rules Documentation:  
 Formulate semi-formal documentation detailing the rules of Connect4, including state representations and allowable transitions. This ensures clarity in the game design.  
