@@ -27,8 +27,13 @@ Implement the MCTS algorithm, encapsulating its core components, selection, expa
 Compile a comprehensive report detailing the software engineering process, design decisions, and challenges faced during development. This will include discussions on the theoretical foundations of bandit processes and MCTS, as well as justifications for the GUI design.  
 
 ## Screenshots
-![](documents/images/Screenshot_Main_Menu.png)
-![](documents/images/Screenshot_PvP.png)
-![](documents/images/Screenshot_PvE.png)
+Main Menu where the user can select to play against another player or against the AI  
+![](documents/images/Screenshot_Main_Menu.png)  
+Game playing screen where users can play against each other  
+![](documents/images/Screenshot_PvP.png)  
+Game playing screen where users can play against the MCTS AI  
+![](documents/images/Screenshot_PvE.png)  
+Pop-up of user winning  
+![](documents/images/Screenshot_Player_Win.png)  
 
 ## Demo
