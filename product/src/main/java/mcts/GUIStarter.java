@@ -1,4 +1,6 @@
-package main;
+package mcts;
+
+import mcts.view.GuiMain;
 
 public class GUIStarter {
 

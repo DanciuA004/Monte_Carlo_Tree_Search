@@ -1,4 +1,4 @@
-package main;
+package mcts.view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +22,7 @@ public class GuiMain extends Application {
 
   @Override
   public void start(Stage stage) throws Exception {
-    Parent root = FXMLLoader.load(getClass().getResource("GuiMenu.fxml"));
+    Parent root = FXMLLoader.load(getClass().getResource("/mcts/GuiMenu.fxml"));
     Scene scene = new Scene(root);
     
     stage.setResizable(false);
@@ -33,4 +33,3 @@ public class GuiMain extends Application {
     
   }
 }
-

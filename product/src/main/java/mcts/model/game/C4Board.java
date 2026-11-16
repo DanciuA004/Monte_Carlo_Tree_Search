@@ -1,21 +1,22 @@
-package main;
+package mcts.model.game;
 
 /**
  * A class for the board that the game will be played in.
  */
 public class C4Board {
-  char[][] grid;
-  final int rows = 6;
-  final int columns = 7;
+  public static final int ROWS = 6;
+  public static final int COLUMNS = 7;
+
+  private final char[][] grid;
 
   /**
    * Constructor to initialise the grid.
    */
   public C4Board() {
-    grid = new char[rows][columns];
+    grid = new char[ROWS][COLUMNS];
     // Fill the grid with empty spaces
-    for (int r = 0; r < rows; r++) {
-      for (int c = 0; c < columns; c++) {
+    for (int r = 0; r < ROWS; r++) {
+      for (int c = 0; c < COLUMNS; c++) {
         grid[r][c] = 0;
       }
     }
@@ -29,8 +30,8 @@ public class C4Board {
    */
   public C4Board copyBoard() {
     C4Board boardCopy = new C4Board();
-    for (int r = 0; r < rows; r++) {
-      System.arraycopy(this.grid[r], 0, boardCopy.grid[r], 0, columns);
+    for (int r = 0; r < ROWS; r++) {
+      System.arraycopy(this.grid[r], 0, boardCopy.grid[r], 0, COLUMNS);
     }
     return boardCopy;
   }
@@ -40,15 +41,14 @@ public class C4Board {
    *
    * @param column The column where the disc will be dropped.
    * @param disc   The disc to be dropped (e.g., "R" or "Y").
-   * @return true if the disc was successfully dropped, false if the column is
-   *         invalid.
+   * @return the row where the disc was placed, or -1 if the move was invalid.
    */
   public int dropDisc(int column, char disc) {
-    if (column < 0 || column >= columns) {
+    if (!isValidMove(column)) {
       return -1; // Invalid column
     }
 
-    for (int r = rows - 1; r >= 0; r--) {
+    for (int r = ROWS - 1; r >= 0; r--) {
       if (grid[r][column] == 0) {
         grid[r][column] = disc;
         return r; // Return the row where the disc was placed
@@ -64,26 +64,20 @@ public class C4Board {
    * @return boolean whether its full or not.
    */
   public boolean isValidMove(int column) {
-    return grid[0][column] == 0;
+    return column >= 0 && column < COLUMNS && grid[0][column] == 0;
+
   }
 
-  /**
-   * Displays the Connect 4 board to the console. Used for testing.
-   */
-  public void displayBoard() {
-    for (int r = 0; r < rows; r++) {
-      // Print each row with | separating columns
-      for (int c = 0; c < columns; c++) {
-        System.out.print("|" + grid[r][c]);
-      }
-      System.out.println("|"); // Close the row
-    }
-
-    // Print the bottom border
-    for (int c = 0; c < columns; c++) {
-      System.out.print("--");
-    }
-    System.out.println("-");
+  public char getCell(int row, int column) {
+    return grid[row][column];
   }
+
+  public int getRows() {
+    return ROWS;
+  }
+
+  public int getColumns() {
+    return COLUMNS;
+  }
+
 }
-

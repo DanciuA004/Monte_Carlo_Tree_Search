@@ -1,11 +1,11 @@
-package main;
+package mcts.model.game;
 
 /**
  * This is a class that hold the information for each player, such as their name and disc colour.
  */
 public class C4Player {
-  String name;
-  char disc;
+  private final String name;
+  private final char disc;
 
   /**
    * Constructor.
@@ -26,4 +26,3 @@ public class C4Player {
     return disc;
   }
 }
-

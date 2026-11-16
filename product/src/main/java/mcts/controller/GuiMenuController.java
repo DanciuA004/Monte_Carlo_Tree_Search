@@ -1,4 +1,4 @@
-package main;
+package mcts.controller;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
@@ -23,7 +23,7 @@ public class GuiMenuController {
    * @throws IOException If resource not found an exception will be thrown.
    */
   public void switchToPvP(ActionEvent event) throws IOException {
-    root = FXMLLoader.load(getClass().getResource("GuiPvP.fxml"));
+    root = FXMLLoader.load(getClass().getResource("/mcts/GuiPvP.fxml"));
     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     scene = new Scene(root);
     stage.setScene(scene);
@@ -36,7 +36,7 @@ public class GuiMenuController {
    * @throws IOException If resource not found an exception will be thrown.
    */
   public void switchToPvE(ActionEvent event) throws IOException {
-    root = FXMLLoader.load(getClass().getResource("GuiPvE.fxml"));
+    root = FXMLLoader.load(getClass().getResource("/mcts/GuiPvE.fxml"));
     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     scene = new Scene(root);
     stage.setScene(scene);
@@ -44,4 +44,3 @@ public class GuiMenuController {
   }
   
 }
-
